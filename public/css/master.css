@@ -1,0 +1,12 @@
+body{
+  background: #333;
+  display: flex;
+  align-items: center; 
+}
+
+.list-container{
+  display: block;
+  margin: auto;
+
+
+}

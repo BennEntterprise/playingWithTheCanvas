@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Debt Away Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width = device-width, initial-scale= 1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Our Styles  -->
+  <link rel="stylesheet" href="interestcalculator.css">
+</head>
+
+<body>
+  <div class="container">
+    <h4>Compound Interest Rate Calculator</h4>
+    <p>This calculator will show how money is expected to grow over 5 years if you do not touch it once it is deposited.</p>
+    <p>This calculator uses a compound interest scenario.
+      <span>
+        <img src="./img/CodeCogsCompoundInterest.gif">
+      </span>
+      <p>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Starting Balance $</span>
+          </div>
+          <input type="text" class="form-control" id="startingBalance" placeholder="input your starting balance">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Interest 1</span>
+          </div>
+          <input type="text" class="form-control" placeholder="10" id="rate1">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Interest 2</span>
+          </div>
+          <input type="text" class="form-control" placeholder="11" id="rate2">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Interest 3</span>
+          </div>
+          <input type="text" class="form-control" placeholder="12" id="rate3">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Interest 4</span>
+          </div>
+          <input type="text" class="form-control" placeholder="13" id="rate4">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" onClick="getTable()">Calculate</button>
+
+          </div>
+        </div>
+
+        <h2 id="table-heading">Interest Table</h2>
+        <p id="table-message">Your Values Will Appear Below</p>
+        <div id="interest-tbl"></div>
+
+
+  </div>
+
+
+  <!-- Our JS -->
+  <script type="text/javascript" src="interestCalcluator.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
